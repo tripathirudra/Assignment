@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SecureID — Login &amp; Registration</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="app-shell">
+
+    <!-- Left brand panel (hidden on mobile widths) -->
+    <aside class="brand-panel">
+      <div class="brand-top">
+        <div class="brand-logo">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L4 5v6c0 5.25 3.4 9.74 8 11 4.6-1.26 8-5.75 8-11V5l-8-3z" fill="currentColor"/>
+            <path d="M9.5 12.2l1.8 1.8 3.7-3.9" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+          <span>SecureID</span>
+        </div>
+        <p class="brand-tag">Identity &amp; access, done right.</p>
+      </div>
+
+      <ul class="brand-points">
+        <li>Bank-grade encryption on every account</li>
+        <li>Multi-factor authentication built in</li>
+        <li>You control every device that's signed in</li>
+      </ul>
+
+      <p class="brand-copy">© 2026 SecureID. All rights reserved.</p>
+    </aside>
+
+    <!-- Right content panel -->
+    <main class="content-panel">
+      <div class="mobile-brand">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L4 5v6c0 5.25 3.4 9.74 8 11 4.6-1.26 8-5.75 8-11V5l-8-3z" fill="#2563eb"/>
+          <path d="M9.5 12.2l1.8 1.8 3.7-3.9" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+        <span>SecureID</span>
+      </div>
+
+      <div id="toast" class="toast" hidden></div>
+
+      <section id="screen-root" class="card" aria-live="polite">
+        <!-- JS injects the active screen here -->
+      </section>
+
+      <p class="mobile-copy">© 2026 SecureID. All rights reserved.</p>
+    </main>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
